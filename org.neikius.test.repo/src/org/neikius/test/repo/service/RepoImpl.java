@@ -35,14 +35,14 @@ public class RepoImpl implements Repo, ManagedTransactional {
 	@Override
 	public List<? extends IEntry> getEntries() {
 		
-		TypedQuery<Entry> query = em.createQuery("SELECT Entry(e) FROM Entry e", Entry.class);
+		TypedQuery<Entry> query = em.createQuery("SELECT e FROM Entry e", Entry.class);
 		
 		return query.getResultList();
 	}
-	
+
 	@Override
-	public Class<?> getManagedInterface() {
-		return Repo.class;
+	public Class<?>[] getManagedInterfaces() {
+		return new Class[]{Repo.class};
 	}
 
 }
