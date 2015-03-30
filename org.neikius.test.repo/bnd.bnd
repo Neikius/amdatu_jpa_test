@@ -11,7 +11,6 @@
 Meta-Persistence: \
 	META-INF/persistence.xml
 Import-Package: \
-	javax.sql;version=1.0.0,\
 	*
 Include-Resource: \
 	META-INF/persistence.xml=META-INF/persistence.xml

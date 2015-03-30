@@ -8,34 +8,34 @@
 	org.apache.felix.gogo.command;version='[0.14.0,0.14.1)',\
 	org.apache.felix.gogo.runtime;version='[0.12.1,0.12.2)',\
 	org.apache.felix.gogo.shell;version='[0.10.0,0.10.1)',\
-	org.amdatu.persistence2_1,\
-	org.amdatu.jpa.datasourcefactory,\
-	org.amdatu.jpa.adapter.eclipselink,\
-	org.amdatu.jta.api,\
-	org.amdatu.jta.manager,\
-	org.amdatu.jta.transactionmanager;version='[1,1]',\
-	org.ops4j.pax.jdbc.postgresql;version='0.4.1',\
+	org.amdatu.persistence2_1;version='[1,1.1)',\
+	org.amdatu.jpa.datasourcefactory;version='[1.1,1.2)',\
+	org.amdatu.jpa.adapter.eclipselink;version='[1.1.1,1.2)',\
+	org.amdatu.jta.api;version='[1,1.1)',\
+	org.amdatu.jta.manager;version='[1.1.1,1.2)',\
+	org.amdatu.jta.transactionmanager;version='[1.0.1,1.1)',\
+	org.ops4j.pax.jdbc.postgresql;version='[0.4.1,0.5)',\
 	org.postgresql,\
-	org.apache.felix.dependencymanager;version='[3,4)',\
-	org.apache.felix.dependencymanager.runtime;version='[3,4)',\
-	org.apache.felix.dependencymanager.shell;version='[3,4)',\
-	org.apache.commons.lang3,\
-	org.apache.felix.configadmin,\
-	org.ops4j.pax.logging.pax-logging-api,\
-	org.ops4j.pax.logging.pax-logging-service,\
-	org.eclipse.persistence.antlr,\
-	org.eclipse.persistence.asm,\
-	org.eclipse.persistence.core,\
-	org.eclipse.persistence.jpa,\
-	org.eclipse.persistence.jpa.jpql,\
-	org.apache.felix.metatype;version=1.0.6,\
-	org.apache.servicemix.bundles.commons-dbcp,\
-	org.apache.commons.pool,\
-	org.amdatu.configurator.api,\
-	org.amdatu.configurator.properties,\
-	org.amdatu.jta;version='[1,2)',\
-	org.apache.aries.util,\
-	org.amdatu.jpa.extender,\
+	org.apache.felix.dependencymanager;version='[3.1,3.2)',\
+	org.apache.felix.dependencymanager.runtime;version='[3.1,3.2)',\
+	org.apache.felix.dependencymanager.shell;version='[3.0.1,3.2)',\
+	org.apache.commons.lang3;version='[3.1,3.2)',\
+	org.apache.felix.configadmin;version='[1.8,1.9)',\
+	org.ops4j.pax.logging.pax-logging-api;version='[1.7,1.8)',\
+	org.ops4j.pax.logging.pax-logging-service;version='[1.7,1.8)',\
+	org.eclipse.persistence.antlr;version='[3.2,3.3)',\
+	org.eclipse.persistence.asm;version='[3.3.1,3.4)',\
+	org.eclipse.persistence.core;version='[2.5.2,2.6)',\
+	org.eclipse.persistence.jpa;version='[2.5.2,2.6)',\
+	org.eclipse.persistence.jpa.jpql;version='[2.5.2,2.6)',\
+	org.apache.felix.metatype;version='[1.0.6,1.0.7)',\
+	org.apache.servicemix.bundles.commons-dbcp;version='[1.4.0.3,1.5)',\
+	org.apache.commons.pool;version='[1.5.4,1.6)',\
+	org.amdatu.configurator.api;version='[1,1.1)',\
+	org.amdatu.configurator.properties;version='[1,1.1)',\
+	org.amdatu.jta;version='[1,1.1)',\
+	org.apache.aries.util;version='[1.1,1.2)',\
+	org.amdatu.jpa.extender;version='[2.0.1,2.1)',\
 	org.neikius.test.repo;version=latest,\
 	org.neikius.test.tester;version=latest
 -runsystempackages: sun.reflect,sun.reflect.misc

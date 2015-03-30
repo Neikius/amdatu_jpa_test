@@ -15,7 +15,7 @@ import org.neikius.test.repo.api.IEntry;
 import org.neikius.test.repo.model.Entry;
 
 @Transactional
-@Component(provides = {ManagedTransactional.class, Repo.class})
+@Component(provides = {ManagedTransactional.class})
 public class RepoImpl implements Repo, ManagedTransactional {
 
 	@ServiceDependency
