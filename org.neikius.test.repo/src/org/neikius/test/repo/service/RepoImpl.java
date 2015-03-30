@@ -1,5 +1,8 @@
 package org.neikius.test.repo.service;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -14,7 +17,6 @@ import org.neikius.test.repo.api.Repo;
 import org.neikius.test.repo.api.IEntry;
 import org.neikius.test.repo.model.Entry;
 
-@Transactional
 @Component(provides = {ManagedTransactional.class})
 public class RepoImpl implements Repo, ManagedTransactional {
 
@@ -25,6 +27,7 @@ public class RepoImpl implements Repo, ManagedTransactional {
 	private volatile DataSource ds;
 	
 	@Override
+	@Transactional
 	public void store(String title, String text) {
 		Entry post = new Entry();
 		post.setTitle(title);
@@ -34,7 +37,6 @@ public class RepoImpl implements Repo, ManagedTransactional {
 	
 	@Override
 	public List<? extends IEntry> getEntries() {
-		
 		TypedQuery<Entry> query = em.createQuery("SELECT e FROM Entry e", Entry.class);
 		
 		return query.getResultList();

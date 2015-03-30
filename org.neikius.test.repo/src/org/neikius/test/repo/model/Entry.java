@@ -11,18 +11,32 @@ import javax.persistence.Table;
 import org.neikius.test.repo.api.IEntry;
 
 @Entity
+@Table(name="\"ENTRY\"")
 public class Entry implements IEntry {
 
+	@Override
+	public String toString() {
+		StringBuffer sb = new StringBuffer();
+		sb.append("{\"id\":");
+		sb.append(id);
+		sb.append(",\"title\":");
+		sb.append(title);
+		sb.append(",\"text\":");
+		sb.append(text);
+		sb.append("}");
+		return sb.toString();
+	};
+	
 	@Id
-	@Column
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="\"ID\"")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	
-	@Column
+	@Column(name="\"TITLE\"")
 	private String title;
 	
 	@Lob
-	@Column
+	@Column(name="\"TEXT\"")
 	private String text;
 	
 	@Override
@@ -30,6 +44,14 @@ public class Entry implements IEntry {
 		return title;
 	}
 
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+	
 	public void setTitle(String title) {
 		this.title = title;
 	}
