@@ -1,0 +1,24 @@
+-buildpath:  \
+	osgi.core,\
+	osgi.cmpn,\
+	biz.aQute.bnd.annotation,\
+	org.postgresql,\
+	osgi.enterprise
+Bundle-Version: 0.4.1.${tstamp}
+Private-Package:  \
+	org.ops4j.pax.jdbc.postgresql,\
+	org.ops4j.pax.jdbc.postgresql.impl
+Service-Component:  \
+	*
+Import-Package:  \
+	org.osgi.service.jdbc;version='[1.0,2)',\
+	org.postgresql;version='[9.1,10)',\
+	org.postgresql.ds;version='[9.1,10)',\
+	org.postgresql.ds.common;version='[9.1,10)',\
+	org.postgresql.xa;version='[9.1,10)',\
+	*
+Bundle-Activator: org.ops4j.pax.jdbc.postgresql.impl.Activator
+Bundle-Name: OPS4J Pax JDBC PostgreSQL Driver Adapter
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
+Bundle-Vendor: OPS4J - Open Participation Software for Java
+Bundle-DocURL: http://www.ops4j.org/
